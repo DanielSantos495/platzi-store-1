@@ -10,6 +10,12 @@ git:
   depth: 3
 script:
   - yarn build
+notifications:
+  email:
+    recipents:
+      - dsantos0495@gmail.com
+    on_success: always
+    on_failure: always
 deploy:
   provider: pages
   skip_cleanup: true
